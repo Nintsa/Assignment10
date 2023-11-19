@@ -7,7 +7,7 @@
     android:background="@color/russianBlack">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/ic_profile"
+        android:id="@+id/startIcon"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:src="@drawable/app_logo"
@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvProfile"
+        android:id="@+id/mainText"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginStart="13dp"
@@ -24,8 +24,9 @@
         android:textColor="@color/gainsboro"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/ic_profile"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@id/startIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
@@ -35,11 +36,12 @@
         android:textColor="@color/gainsboro"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/moreInfo"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/endIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/addInfo"/>
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/moreInfo"
+        android:id="@+id/endIcon"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:src="@drawable/more_horizontal_circle_svgrepo_com"

@@ -24,10 +24,15 @@ class SettingsRecyclerAdapter(private val settingsList: MutableList<SettingsClas
     }
 
     override fun onBindViewHolder(holder: SettingsViewHolder, position: Int) {
+        val setting = settingsList[position]
+        holder.binding.startIcon.setImageResource(setting.startIcon)
+        holder.binding.mainText.text = setting.name
+        holder.binding.addInfo.text = setting.additionalInfo
+        holder.binding.endIcon.setImageResource(setting.endIcon)
     }
 
 
-    inner class SettingsViewHolder(private val binding: SettingsRecyclerviewBinding) :
+    inner class SettingsViewHolder(val binding: SettingsRecyclerviewBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
     }
