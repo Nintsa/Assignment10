@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="GhostWhite">#f3f3f4</color>
+    <color name="gainsboro">#e0e0e1</color>
+    <color name="FieryCoral">#e25e59</color>
+    <color name="chineseSilver">#cbcccd</color>
+    <color name="russianBlack">#181a1f</color>
+</resources>
